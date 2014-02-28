@@ -1,3 +1,1 @@
-if [ -d $HOME/bin ]; then
-	export PATH=$PATH:$HOME/bin
-fi
+export PATH=$PATH:$HOME/dotfiles/bin

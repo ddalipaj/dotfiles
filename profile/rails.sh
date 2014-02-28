@@ -1,13 +1,5 @@
 alias migrar="rake db:migrate db:test:prepare"
 
-function rails {
-	if [ -e script/rails ]; then
-		script/rails $@
-	else
-		`which rails` $@
-	fi
-}
-
 function rake {
   if [ -e Gemfile ]; then
     time bundle exec rake $@
@@ -33,15 +25,15 @@ function rspec {
 }
 
 function fs {
-	bundle exec foreman start -f Procfile $@
+  bundle exec foreman start -f Procfile $@
 }
 
 function s {
-	if [ -e script/rails ]; then
-		script/rails server $@
-	else
-		script/server $@
-	fi
+  if [ -e script/rails ]; then
+    script/rails server $@
+  else
+    script/server $@
+  fi
 }
 
 function c {

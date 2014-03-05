@@ -1,6 +1,7 @@
 alias p="cd $PROJECTS_PATH"
 
 function update_all {
+  CURRENT_PATH=`pwd`
   source $HOME/dotfiles/profile/chruby.sh
   cd $PROJECTS_PATH
   for i in $(find . -type d); do
@@ -20,6 +21,8 @@ function update_all {
       cd - > /dev/null
     fi
   done
+  cd $CURRENT_PATH
+  unset CURRENT_PATH
 }
 
 function truncate_logs {

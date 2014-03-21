@@ -12,7 +12,7 @@ function update_all {
         git pull --rebase --quiet > /dev/null
         if [ -e Gemfile ]; then
           echo -e "\033[1m'Bundling' "$i"\033[0m"
-          source $HOME/dotfiles/profile/chruby.sh
+          source $HOME/dotfiles/profile/04_chruby.sh
           bundle --quiet
         fi
       fi

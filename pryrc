@@ -1,4 +1,4 @@
-Pry.config.editor = "subl -n -w"
+Pry.config.editor = "mate -w"
 
 Pry.config.should_load_plugins = false
 Pry.plugins["doc"].activate!
@@ -13,17 +13,17 @@ Pry.config.prompt = proc do |obj, level, _|
   "#{prompt} (#{obj})> "
 end
 
-if defined?(Rails)
-  begin
-    require "rails/console/app"
-    require "rails/console/helpers"
-
-    TOPLEVEL_BINDING.eval("self").extend ::Rails::ConsoleMethods
-  rescue LoadError => e
-    require "console_app"
-    require "console_with_helpers"
-  end
-end
+# if defined?(Rails)
+#   begin
+#     require "rails/console/app"
+#     require "rails/console/helpers"
+# 
+#     TOPLEVEL_BINDING.eval("self").extend ::Rails::ConsoleMethods
+#   rescue LoadError => e
+#     require "console_app"
+#     require "console_with_helpers"
+#   end
+# end
 
 Pry.config.exception_handler = proc do |output, exception, _|
   output.puts "\e[31m#{exception.class}: #{exception.message}"

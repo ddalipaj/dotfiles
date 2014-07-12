@@ -31,23 +31,29 @@ function fs {
 function s {
   if [ -e script/rails ]; then
     script/rails server $@
-  else
+  elif [ -e script/server ]; then
     script/server $@
+  else
+    rails server $@
   fi
 }
 
 function c {
   if [ -e script/rails ]; then
     script/rails console $@
-  else
+  elif [ -e script/console ]; then
     script/console $@
+  else
+    rails console $@
   fi
 }
 
 function g {
   if [ -e script/rails ]; then
     script/rails generate $@
-  else
+  elif [ -e script/generate ]; then
     script/generate $@
+  else
+    rails generate $@
   fi
 }

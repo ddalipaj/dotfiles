@@ -1,4 +1,6 @@
-export PATH="`brew --prefix`/bin:$PATH:/usr/local/sbin"
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
+if [ -f /usr/local/bin/brew ]; then
+  export PATH="`brew --prefix`/bin:$PATH:/usr/local/sbin"
+  if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+  fi
 fi

@@ -27,5 +27,4 @@ function update_all {
 
 function truncate_logs {
   for item in $(find $PROJECTS_PATH -name '*.log' -type f) ;do cat /dev/null > $item ;done
-  for item in $(find `brew --prefix`/var/log -name '*.log' -type f) ;do cat /dev/null > $item ;done
 }

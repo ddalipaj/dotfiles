@@ -1,6 +1,7 @@
 [user]
   name = Marcos Tapajós
-  email = tapajos@gmail.com
+	email = tapajos@gmail.com
+	name = Marcos
 [push]
   default = current
 [alias]

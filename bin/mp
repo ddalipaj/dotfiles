@@ -1,2 +1,0 @@
-defaults write com.macromates.TextMate.preview volumeSettings '{ "/Users/tapajos/projects/LivingSocial/dev_box/tmp/projects" = { extendedAttributes = 0; }; }'
-sshfs lsdev:/home/vagrant/projects tmp/projects -oauto_cache,reconnect,defer_permissions,negative_vncache,volname=projects

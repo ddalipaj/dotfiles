@@ -12,10 +12,10 @@ alias ga="git add ."
 alias gm="git checkout master"
 
 
-if [[ -z "$GIT_USER_NAME" ]]
-	git config user.name $GIT_USER_NAME
+if [[ -z "$GIT_USER_NAME" ]]; then
+  git config user.name $GIT_USER_NAME
 fi
 
-if [[ -z "$GIT_USER_EMAIL" ]]
-	git config user.email $GIT_USER_EMAIL
+if [[ -z "$GIT_USER_EMAIL" ]]; then
+  git config user.email $GIT_USER_EMAIL
 fi

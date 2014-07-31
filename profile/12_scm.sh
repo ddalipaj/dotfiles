@@ -1,7 +1,7 @@
 alias gbl="git branch"
 alias gb="git branch -a"
 alias gc="git commit -a"
-alias gd="git diff | mate"
+alias gd="git diff | $GIT_EDITOR"
 alias gl="git pull"
 alias rgl="git pull --rebase"
 alias gp="git push"

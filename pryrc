@@ -4,7 +4,7 @@ Pry.config.should_load_plugins = false
 Pry.plugins["doc"].activate!
 Pry.plugins["nav"].activate!
 
-Pry.config.history.file = "~/.irb-history"
+Pry.config.history.file = "/Users/tapajos/.irb-history"
 
 Pry.config.prompt = proc do |obj, level, _|
   prompt = ""
@@ -17,7 +17,7 @@ end
 #   begin
 #     require "rails/console/app"
 #     require "rails/console/helpers"
-# 
+#
 #     TOPLEVEL_BINDING.eval("self").extend ::Rails::ConsoleMethods
 #   rescue LoadError => e
 #     require "console_app"

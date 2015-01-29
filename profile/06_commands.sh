@@ -16,5 +16,3 @@ function mac {
 function change_mac {
   sudo ifconfig en0 ether `mac`
 }
-
-alias r='cd ; chruby ruby-1.9.3-p484 ; ringleader /Users/tapajos/projects/LivingSocial/ls-dev/config/nginx/ringleader.yml'

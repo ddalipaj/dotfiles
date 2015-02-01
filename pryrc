@@ -1,16 +1,18 @@
-Pry.config.editor = "mate -w"
-
 Pry.config.should_load_plugins = false
-Pry.plugins["doc"].activate!
-Pry.plugins["nav"].activate!
 
-Pry.config.history.file = "/Users/tapajos/.irb-history"
+Pry.config.history.file = IRB.conf[:HISTORY_FILE]
 
 Pry.config.prompt = proc do |obj, level, _|
-  prompt = ""
-  prompt << "#{Rails.version}@" if defined?(Rails)
-  prompt << "#{RUBY_VERSION}"
-  "#{prompt} (#{obj})> "
+  prompt = []
+  prompt << "\e[31m#{File.basename(Dir.pwd)}\e[0m "
+  if defined?(Rails)
+    prompt << "#{Rails.version}@#{RUBY_VERSION}" if defined?(Rails)
+  else
+    prompt << "#{RUBY_VERSION}"
+  end
+  prompt << " (#{obj})" if obj.to_s != "main"
+  prompt << " > "
+  prompt.join
 end
 
 Pry.config.exception_handler = proc do |output, exception, _|
@@ -18,11 +20,5 @@ Pry.config.exception_handler = proc do |output, exception, _|
   output.puts "from #{exception.backtrace.first}\e[0m"
 end
 
-begin
-  require 'awesome_print'
-  Pry.config.print = proc { |output, value| output.puts value.ai }
-rescue LoadError => err
-  puts "no awesome_print :("
-end
-
-Dir["#{ENV['HOME']}/dotfiles/pry_helpers/*"].map {|file| require file }
+Pry.plugins["doc"].activate!
+Pry.plugins["nav"].activate!

@@ -1,6 +1,6 @@
 Pry.config.should_load_plugins = false
 
-Pry.config.history.file = IRB.conf[:HISTORY_FILE]
+Pry.config.history.file = "#{ENV['HOME']}/.irb-history"
 
 Pry.config.prompt = proc do |obj, level, _|
   prompt = []

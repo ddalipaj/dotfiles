@@ -1,0 +1,19 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "700b18c6-f94c-4ad4-8a22-e77c7776b136"
+  core:
+    themes: [
+      "one-dark-ui"
+      "blackboard-dark-mod"
+    ]
+  editor:
+    fontFamily: "Luxi Mono"
+    fontSize: 13
+    invisibles: {}
+  "exception-reporting":
+    userId: "f3959fcd-fb19-e6b4-9e6c-d9e009d5b377"
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false

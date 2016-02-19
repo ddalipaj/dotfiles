@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for FILE in bash_profile pryrc tm_properties gitconfig irbrc my.cnf rmate.rc
+for FILE in bash_profile pryrc tm_properties gitconfig irbrc my.cnf rmate.rc atom
 do
   rm -f "$HOME/.$FILE"
   ln -s "$(pwd)/$FILE" "$HOME/.$FILE"

@@ -19,7 +19,7 @@
 [status]
   submodule = 1
 [core]
-  editor = mate -w
+  editor = atom --wait
 [rerere]
   enabled = true
 [branch]

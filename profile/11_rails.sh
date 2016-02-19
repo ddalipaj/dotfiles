@@ -1,3 +1,5 @@
+export DISABLE_SPRING=true
+
 alias migrar="rake db:migrate db:test:prepare"
 
 function rake {

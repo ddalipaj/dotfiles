@@ -1,4 +1,4 @@
-export TEXT_EDITOR="mate"
+export TEXT_EDITOR="atom"
 export PROJECTS_PATH="$HOME/projects"
 export EDITOR="$TEXT_EDITOR -w"
 export GIT_EDITOR=$EDITOR

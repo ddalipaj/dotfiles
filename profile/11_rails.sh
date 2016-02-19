@@ -25,7 +25,13 @@ function rspec {
 }
 
 function fs {
-  bundle exec foreman start -f Procfile $@
+  if [ -e Procfile.puma ]; then
+    bundle exec foreman start -f Procfile.puma $@
+	elif [ -e Procfile.development ]; then
+		bundle exec foreman start -f Procfile.development $@
+  else
+		bundle exec foreman start -f Procfile $@
+  fi
 }
 
 function s {

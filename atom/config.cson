@@ -4,7 +4,7 @@
   core:
     projectHome: "/Users/tapajos/projects"
     themes: [
-      "one-dark-ui"
+      "atom-dark-ui"
       "blackboard-dark-mod"
     ]
   editor:

@@ -1,0 +1,51 @@
+{
+  "name": "close-after-last-tab-with-git",
+  "main": "./lib/close-after-last-tab-with-git",
+  "version": "0.3.0",
+  "description": "Close the window after the last tab has been closed with a git folder.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tapajos/atom-close-after-last-tab-with-git.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Marcos Tapajos",
+    "email": "tapajos@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "John Heaton",
+      "email": "jheaton.dev@gmail.com"
+    }
+  ],
+  "activationEvents": [
+    "pane:item-removed"
+  ],
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "# Close After Last Tab With Git\n\nThis closes the atom after closing the last tabs when in a git path.\n\nIt was inspired on https://github.com/JRHeaton/atom-close-after-last-tab\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/tapajos/atom-close-after-last-tab-with-git/issues"
+  },
+  "homepage": "https://github.com/tapajos/atom-close-after-last-tab-with-git#readme",
+  "_id": "close-after-last-tab-with-git@0.3.0",
+  "_shasum": "23e351db7b18f05502450bed842c49bef5c69cb3",
+  "_resolved": "file:../d-116325-50329-9n7ajh/package.tgz",
+  "_from": "../d-116325-50329-9n7ajh/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/close-after-last-tab-with-git.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

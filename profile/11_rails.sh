@@ -10,6 +10,14 @@ function rake {
   fi
 }
 
+function sidekiq {
+  if [ -e Gemfile ]; then
+    time bundle exec sidekiq $@
+  else
+    time `which sidekiq` $@
+  fi
+}
+
 function cap {
   if [ -e Gemfile ]; then
     time bundle exec cap $@

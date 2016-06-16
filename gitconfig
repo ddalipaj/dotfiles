@@ -1,6 +1,7 @@
 [user]
   name = Marcos Tapajós
 	email = tapajos@gmail.com
+	signingkey = 4FA1C873
 [push]
   default = current
 [alias]

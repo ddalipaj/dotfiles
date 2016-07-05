@@ -1,8 +1,7 @@
 "*":
   "atom-beautify":
-    _analyticsUserId: "700b18c6-f94c-4ad4-8a22-e77c7776b136"
     general:
-      _analyticsUserId: "4653a9ec-546b-4041-8def-b6811214f089"
+      _analyticsUserId: "700b18c6-f94c-4ad4-8a22-e77c7776b136"
   core:
     projectHome: "/Users/tapajos/projects"
     themes: [

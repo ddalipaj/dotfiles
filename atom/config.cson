@@ -10,7 +10,7 @@
     ]
   editor:
     fontFamily: "Luxi Mono"
-    fontSize: 13
+    fontSize: 17
     invisibles: {}
     showIndentGuide: true
   "exception-reporting":

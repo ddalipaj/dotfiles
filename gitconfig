@@ -21,6 +21,7 @@
   submodule = 1
 [core]
   editor = atom --wait
+	excludesfile = /Users/tapajos/.gitignore_global
 [rerere]
   enabled = true
 [branch]

@@ -4,6 +4,7 @@
       _analyticsUserId: "700b18c6-f94c-4ad4-8a22-e77c7776b136"
   core:
     projectHome: "/Users/tapajos/projects"
+    telemetryConsent: "no"
     themes: [
       "atom-dark-ui"
       "blackboard-dark-mod"

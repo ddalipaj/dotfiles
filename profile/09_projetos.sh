@@ -1,5 +1,4 @@
 alias p="cd $PROJECTS_PATH"
-alias vs="cd $PROJECTS_PATH/VarageSale"
 
 function update_all {
   CURRENT_PATH=`pwd`

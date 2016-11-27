@@ -1,41 +1,63 @@
 {
-  "name": "duplicate-line-or-selection",
-  "main": "./lib/duplicate-line-or-selection",
-  "version": "0.5.0",
-  "description": "Sublime style duplication.",
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/kr/mn1_qdbn5j7fzq6wj8d7t5f40000gn/T/d-1161027-21905-1gwdwnj/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/kr/mn1_qdbn5j7fzq6wj8d7t5f40000gn/T/d-1161027-21905-1gwdwnj/package.tgz",
+        "spec": "/private/var/folders/kr/mn1_qdbn5j7fzq6wj8d7t5f40000gn/T/d-1161027-21905-1gwdwnj/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/kr/mn1_qdbn5j7fzq6wj8d7t5f40000gn/T/apm-install-dir-1161027-21905-1dudk2b"
+    ]
+  ],
+  "_from": "../d-1161027-21905-1gwdwnj/package.tgz",
+  "_id": "duplicate-line-or-selection@0.9.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/duplicate-line-or-selection",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/kr/mn1_qdbn5j7fzq6wj8d7t5f40000gn/T/d-1161027-21905-1gwdwnj/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/kr/mn1_qdbn5j7fzq6wj8d7t5f40000gn/T/d-1161027-21905-1gwdwnj/package.tgz",
+    "spec": "/private/var/folders/kr/mn1_qdbn5j7fzq6wj8d7t5f40000gn/T/d-1161027-21905-1gwdwnj/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1161027-21905-1gwdwnj/package.tgz",
+  "_shasum": "d2d5ded6343895c9abb1c391eb05dd6df6bbfd20",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/kr/mn1_qdbn5j7fzq6wj8d7t5f40000gn/T/d-1161027-21905-1gwdwnj/package.tgz",
+  "_where": "/private/var/folders/kr/mn1_qdbn5j7fzq6wj8d7t5f40000gn/T/apm-install-dir-1161027-21905-1dudk2b",
   "activationCommands": {
     "atom-workspace": "duplicate-line-or-selection:duplicate"
   },
+  "bugs": {
+    "url": "https://github.com/nick/duplicate-line-or-selection/issues"
+  },
+  "dependencies": {},
+  "description": "Sublime style duplication.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/nick/duplicate-line-or-selection#readme",
+  "license": "MIT",
+  "main": "./lib/duplicate-line-or-selection",
+  "name": "duplicate-line-or-selection",
+  "optionalDependencies": {},
+  "readme": "# Duplicate Line or Selection\n\nDuplicates the selection if there is one, otherwise, duplicates the line.\n",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nick/duplicate-line-or-selection.git"
   },
-  "license": "MIT",
-  "engines": {
-    "atom": ">=0.174.0 <2.0.0"
-  },
-  "dependencies": {},
-  "readme": "# Duplicate Line or Selection\n\nDuplicates the selection if there is one, otherwise, duplicates the line.\n",
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/nick/duplicate-line-or-selection/issues"
-  },
-  "homepage": "https://github.com/nick/duplicate-line-or-selection#readme",
-  "_id": "duplicate-line-or-selection@0.5.0",
-  "_shasum": "56d13482a1a92b64e017cf36f2eec522931bf0ad",
-  "_resolved": "file:../d-116119-92283-1ebp1oe/package.tgz",
-  "_from": "../d-116119-92283-1ebp1oe/package.tgz",
-  "_atomModuleCache": {
-    "version": 1,
-    "dependencies": [],
-    "extensions": {
-      ".coffee": [
-        "lib/duplicate-line-or-selection.coffee"
-      ],
-      ".json": [
-        "package.json"
-      ]
-    },
-    "folders": []
-  }
+  "version": "0.9.0"
 }

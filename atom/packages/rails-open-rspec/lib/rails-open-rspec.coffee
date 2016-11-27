@@ -31,9 +31,11 @@ module.exports =
 
     if @isSpecFile(relativePath)
       openFilePath = relativePath.replace /\_spec\.rb$/, '.rb'
+      openFilePath = openFilePath.replace /^\/spec\/lib\//, "/lib/"
       openFilePath = openFilePath.replace /^\/spec\//, "/app/"
     else
       openFilePath = relativePath.replace /\.rb$/, '_spec.rb'
+      openFilePath = openFilePath.replace /^\/lib\//, "/spec/lib/"
       openFilePath = openFilePath.replace /^\/app\//, "/spec/"
 
     if relativePath == openFilePath
@@ -49,10 +51,11 @@ module.exports =
 
   openWithWrite: (openFilePath, sourceEditor) ->
     openOptions = {}
-    if @isSinglePane()
-      openOptions = { split: 'right' }
-    else
-      atom.workspace.activateNextPane()
+    if atom.config.get('rails-open-rspec.splitPane')
+      if @isSinglePane()
+        openOptions = { split: 'right' }
+      else
+        atom.workspace.activateNextPane()
 
     promise = atom.workspace.open(openFilePath, openOptions)
 
